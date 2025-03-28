@@ -1,0 +1,6 @@
+FROM ubuntu:24.04
+
+WORKDIR /app
+COPY bin/gotk-example-http .
+
+ENTRYPOINT ["/app/gotk-example-http", "cron"]

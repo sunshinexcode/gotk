@@ -1,0 +1,10 @@
+[app]
+env = "test"
+
+# [httpServer]
+# model = "test"
+
+# [log]
+# level = 0
+# outputMode = 2
+# outputFormatMode = 0

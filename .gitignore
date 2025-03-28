@@ -2,6 +2,7 @@
 .idea
 .vscode
 bin/
+coverage.out
 go.work
 go.work.sum
 vendor/

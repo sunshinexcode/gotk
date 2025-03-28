@@ -1,0 +1,6 @@
+[app]
+env = "dev"
+
+[appCustom]
+cronPatternCreateTaskForVerify = "*/10 * * * * *"
+cronPatternProcessTaskForVerify = "*/10 * * * * *"
