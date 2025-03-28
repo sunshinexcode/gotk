@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+    "name": "gotk",
+    "image": "golang:1.24.0",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "aleksandra.go-group-imports"
+            ],
+            "settings": {
+                "go.testFlags": [
+                    "-v",
+                    "-count=1",
+                    "-gcflags=all=-N -l",
+                    "-parallel=1"
+                ]
+            }
+        }
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind",
+    "workspaceFolder": "/app",
+    "forwardPorts": [
+        8080
+    ],
+    "postCreateCommand": "apt-get update --allow-insecure-repositories && apt-get install -y lsof"
+}

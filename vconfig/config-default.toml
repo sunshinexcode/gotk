@@ -1,0 +1,71 @@
+# [api]
+# secret = ""
+
+[app]
+# dev/test/pre/prod
+env = ""
+name = "gotk"
+
+# [appCustom]
+
+#[es]
+#url = "http://127.0.0.1:9200/test?shards=1&replicas=0&sniff=false"
+
+# [httpServer]
+# address = ":8080"
+# # debug/test/release
+# model = "debug"
+
+# [log]
+# compress = false
+# file = "/data/logs/app.log"
+# # debug: -1, info: 0, warn: 1, error: 2
+# level = -1
+# maxAge = 1
+# maxBackups = 1
+# # MB
+# maxSize = 50
+# # 0:console, 1:file, 2:console and file
+# outputMode = 0
+# # 0:text, 1:json
+# outputFormatMode = 0
+
+# [metric]
+# #disableGoCollector = true
+# #disableProcessCollector = true
+# #buildInfoHelp = "build info"
+# buildInfoLabelNames = ["branch", "buildTime", "commit", "goVersion", "version"]
+# #buildInfoName = "build_info"
+# #httpRequestDurationBucketsCount = 16
+# #httpRequestDurationBucketsStart = 0
+# #httpRequestDurationBucketsWidth = 200
+# #httpRequestDurationHelp = "http request duration"
+# httpRequestDurationLabelNames = ["type", "api", "code"]
+# #httpRequestDurationName = "http_request_duration"
+# #httpRequestTotalHelp = "http request total"
+# httpRequestTotalLabelNames = ["type", "api", "code"]
+# #httpRequestTotalName = "http_request_total"
+# #namespace = ""
+# #port = ":9090"
+# #url = "/metrics"
+
+#[mongodb]
+#db = "test"
+#limit = 10000
+#maxPoolSize = 200
+#timeout = 5
+#uri = "mongodb://test:123456@localhost:27017/test"
+
+# [mysql]
+# db = "test"
+# host = "localhost"
+# password = ""
+# port = 3306
+# timeout = "10s"
+# userName = "root"
+
+# [redis]
+# addrs = ["localhost:6379"]
+# db = 0
+# password = ""
+# poolSize = 50

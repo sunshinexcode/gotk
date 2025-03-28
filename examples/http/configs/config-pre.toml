@@ -1,0 +1,10 @@
+[app]
+env = "pre"
+
+[httpServer]
+model = "release"
+
+[log]
+level = 0
+outputMode = 2
+outputFormatMode = 0
