@@ -10,7 +10,7 @@ import (
 )
 
 func TestGotkVersion(t *testing.T) {
-	vtest.Equal(t, "v0.0.1", vversion.GotkVersion)
+	vtest.Equal(t, "v0.0.2", vversion.GotkVersion)
 }
 
 func TestMetric(t *testing.T) {

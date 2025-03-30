@@ -8,7 +8,7 @@ import (
 	"github.com/sunshinexcode/gotk/vmetric"
 )
 
-const GotkVersion = "v0.0.1"
+const GotkVersion = "v0.0.2"
 
 var (
 	Branch    string

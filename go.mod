@@ -6,6 +6,7 @@ require (
 	github.com/agiledragon/gomonkey/v2 v2.13.0
 	github.com/forgoer/openssl v1.6.0
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
+	github.com/ggwhite/go-masker/v2 v2.1.0
 	github.com/gin-gonic/gin v1.10.0
 	github.com/go-resty/resty/v2 v2.16.5
 	github.com/gogf/gf/v2 v2.9.0
