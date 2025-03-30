@@ -71,6 +71,7 @@ GoTK consists of the following modules:
 | vlimit      | Rate limiting utilities          |
 | vlog        | Logging system                   |
 | vmap        | Map operations utilities         |
+| vmask       | Mask operations utilities        |
 | vmd5        | MD5 hashing utilities            |
 | vmetric     | Metrics collection               |
 | vmiddleware | HTTP middleware                  |
