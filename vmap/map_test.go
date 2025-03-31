@@ -10,7 +10,6 @@ import (
 
 func TestType(t *testing.T) {
 	vtest.Equal(t, map[string]any{"name": "test"}, vmap.M{"name": "test"})
-	vtest.Equal(t, map[string]any{"name": "test"}, vmap.Map{"name": "test"})
 }
 
 func TestDecode(t *testing.T) {

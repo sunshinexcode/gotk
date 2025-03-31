@@ -27,7 +27,7 @@ func TestNew(t *testing.T) {
 		Type int    `v:"required#Please select user type"`
 	}
 	user := User{}
-	data := vmap.Map{
+	data := vmap.M{
 		"name": "john",
 	}
 	err2 := vconv.Struct(data, &user)

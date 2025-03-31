@@ -79,7 +79,7 @@ func TestStruct(t *testing.T) {
 		Uid  int
 		Name string
 	}
-	params := vmap.Map{
+	params := vmap.M{
 		"uid":  1,
 		"name": "john",
 	}
@@ -104,7 +104,7 @@ func TestStruct(t *testing.T) {
 		Password string `json:"password"`
 		Nickname string `json:"nickname"`
 	}
-	data := vmap.Map{
+	data := vmap.M{
 		"id":          1,
 		"uid":         100,
 		"passport":    "john",
