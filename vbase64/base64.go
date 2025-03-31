@@ -4,32 +4,28 @@ import (
 	"github.com/gogf/gf/v2/encoding/gbase64"
 )
 
-// Decode decodes bytes with BASE64 algorithm.
-func Decode(data []byte) ([]byte, error) {
-	return gbase64.Decode(data)
-}
+// Package vbase64 provides base64 encoding and decoding functionality.
+// It re-exports all methods from github.com/gogf/gf/v2/encoding/gbase64 package.
+//
+// Example:
+//   // Encode string to base64
+//   encoded := vbase64.EncodeString("Hello World")
+//   // Decode base64 string
+//   decoded, err := vbase64.DecodeString("SGVsbG8gV29ybGQ=")
+//   if err != nil {
+//       // Handle error
+//   }
 
-// DecodeStr decodes string with BASE64 algorithm.
-func DecodeStr(data string) ([]byte, error) {
-	return gbase64.DecodeString(data)
-}
-
-// DecodeToStr decodes string with BASE64 algorithm.
-func DecodeToStr(data string) (string, error) {
-	return gbase64.DecodeToString(data)
-}
-
-// Encode encodes bytes with BASE64 algorithm.
-func Encode(src []byte) []byte {
-	return gbase64.Encode(src)
-}
-
-// EncodeStr encodes string with BASE64 algorithm.
-func EncodeStr(src string) string {
-	return gbase64.EncodeString(src)
-}
-
-// EncodeToStr encodes bytes to string with BASE64 algorithm.
-func EncodeToStr(src []byte) string {
-	return gbase64.EncodeToString(src)
-}
+// Export all methods from gbase64 package
+var (
+	Decode         = gbase64.Decode
+	DecodeStr      = gbase64.DecodeString
+	DecodeString   = gbase64.DecodeString
+	DecodeToStr    = gbase64.DecodeToString
+	DecodeToString = gbase64.DecodeToString
+	Encode         = gbase64.Encode
+	EncodeStr      = gbase64.EncodeString
+	EncodeString   = gbase64.EncodeString
+	EncodeToStr    = gbase64.EncodeToString
+	EncodeToString = gbase64.EncodeToString
+)
